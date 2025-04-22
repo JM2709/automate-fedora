@@ -13,14 +13,6 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video -y
 sudo dnf install amrnb amrwb faad2 flac gpac-libs lame libde265 libfc14audiodecoder mencoder x264 x265 ffmpegthumbnailer -y
 
-# Instalar o 1Password
-#sudo rpm --import https://downloads.1password.com/linux/keys/1password.asc
-#sudo sh -c 'echo -e "[1password]\nname=1Password Stable Channel\nbaseurl=https://downloads.1password.com/linux/rpm/stable/\$basearch\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=\"https://downloads.1password.com/linux/keys/1password.asc\"" > /etc/yum.repos.d/1password.repo'
-#sudo dnf install 1password -y
-
-# Instalar o Piper para gerenciar o MX Master 3
-#sudo dnf install piper -y
-
 # Instalar o GNOME Tweaks para configurar o botão de minimizar
 sudo dnf install gnome-tweaks -y
 
@@ -45,9 +37,10 @@ flatpak install flathub dev.lizardbyte.app.Sunshine
 
 # Instalar aplicativos em flatpak
 flatpak install flathub com.discordapp.Discord
-#flatpak install flathub com.spotify.Client
-#flatpak install flathub tech.feliciano.pocket-casts
 flatpak install flathub com.obsproject.Studio
+flatpak install flathub org.kde.kdenlive
+flatpak install flathub org.audacityteam.Audacity
+flatpak install flathub org.gimp.GIMP
 #flatpak install flathub io.github.celluloid_player.Celluloid
 flatpak install flathub org.gnome.Boxes
 flatpak install flathub com.mattjakeman.ExtensionManager
@@ -60,7 +53,13 @@ flatpak install flathub de.haeckerfelix.Fragments
 flatpak install flathub com.rtosta.zapzap
 flatpak install flathub com.todoist.Todoist
 flatpak install flathub io.github.pwr_solaar.solaar
-flatpak install flathub io.github.brunofin.Cohesion
+flatpak install flathub io.github.brunofin.Cohesion #(Notion)
+flatpak install flathub com.anydesk.Anydesk
+flatpak install flathub org.remmina.Remmina
+flatpak install flathub com.rustdesk.RustDesk
+flatpak install flathub com.ultimaker.cura
+#flatpak install flathub com.spotify.Client
+flatpak install flathub com.brave.Browser
 
 # Instalar as fontes que estão na pasta: Fontes
 # Aplicativos para instalar depois manualmente: DaVinci Resolve, Figma for Desktop, Insync
